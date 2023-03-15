@@ -1,0 +1,129 @@
+#agenda {
+    padding-bottom: 7.5rem;
+
+    .location-nav {
+        position: absolute;
+        top: 0.65rem;
+        right: 0;
+        font-weight: 500;
+
+        .location-tab {
+            margin-right: 1rem;
+            span {
+                color: $light;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .tab-active {
+            span {
+                color: $primary;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .locations {
+        list-style: none;
+        padding-left: 0;
+
+        li.location {
+            display: none;
+
+            &.tab-active {
+                display: block;
+            }
+
+            span {
+                &.date {
+                    margin-left: 0.5rem;
+                    font-weight: 500;
+                    color: $light;
+                }
+            }
+
+            .timetable {
+                margin-top: 1.5rem;
+
+                .timetable-row {
+                    position: relative;
+                    padding: 1rem 0;
+                    border-bottom: 1px solid $light;
+                    &:hover {
+                        background-color: #f8f8f8;
+                        img {
+                            opacity: 1;
+                        }
+                    }
+
+                    span {
+                        &.time {
+                            padding-left: 1rem;
+                            padding-right: 1.5rem;
+                            font-weight: 700;
+                            font-size: 1.25rem;
+                            color: $light;
+                        }
+                        &.activity {
+                            font-weight: 700;
+                            font-size: 1.25rem;
+                            color: $primary;
+                        }
+                    }
+
+                    img {
+                        position: absolute;
+                        right: 14px;
+                        bottom: 14px;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all 0.4s;
+                        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2));
+                    }
+                }
+            }
+
+            .agenda-link {
+                margin-left: auto;
+                a {
+                    margin-left: 10px;
+                    font-weight: 700;
+                    color: $primary;
+                    transition: $transitionSpeed;
+                    text-decoration-thickness: 1px;
+                    text-underline-offset: 1.5px;
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 992px) {
+        padding-bottom: 4rem;
+    }
+
+    @media screen and(max-width: 768px) {
+        .location-nav {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media screen and(max-width: 576px) {
+        .timetable-row {
+            flex-wrap: wrap;
+            .time {
+                flex: 0 0 100%;
+                margin-bottom: 0.75rem;
+            }
+
+            .activity {
+                padding-left: 1rem;
+            }
+        }
+    }
+}

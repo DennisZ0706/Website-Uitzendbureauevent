@@ -1,0 +1,66 @@
+.button {
+    background: $primarybutton;
+    color: $primary;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    text-decoration: none;
+    line-height: 2rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+
+    &.navbutton {
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+    }
+
+    &.mobilebutton {
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:after {
+        font-size: 1.5rem;
+        font-weight: 400;
+        content: "»";
+        position: absolute;
+        opacity: 0;
+        top: 10px;
+        right: 20px;
+        transition: all 0.5s;
+    }
+
+    .button-year {
+        display: inline-flex;
+        justify-content: center;
+        width: 1.5rem;
+        left: -6px;
+        font-size: 0.75rem;
+        transform: rotate(-90deg);
+        transition: all 0.2s;
+    }
+
+    .button-content {
+        padding: 0.8rem 1rem;
+        border-left: 1px dashed black;
+        transition: all 0.2s;
+    }
+
+    &:hover {
+        background-color: white;
+        color: $secondary;
+        border: 1px solid $secondary;
+        &:after {
+            opacity: 1;
+            right: 10px;
+        }
+        .button-year {
+            opacity: 0;
+            width: 0;
+        }
+        .button-content {
+            padding: 0.8rem 2.5rem 0.8rem 1rem;
+            border-left: 1px dashed transparent;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import "vars";
+@import "fonts";
+@import "buttons";
+@import "setup";
+
+@import "sections/header";
+@import "sections/hero";
+@import "sections/theme";
+@import "sections/partners";
+@import "sections/faq";
+@import "sections/location";
+@import "sections/tickets";
+@import "sections/footer";
+@import "sections/video";
+@import "sections/agenda";
+
+.hidden {
+    display: none;
+    &.active {
+        display: block;
+    }
+}

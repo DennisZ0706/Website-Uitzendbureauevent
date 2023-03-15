@@ -1,0 +1,100 @@
+#location {
+    .container {
+        padding-top: 4rem;
+        position: relative;
+        overflow: hidden;
+
+        .event-even {
+            margin-top: 2.625rem;
+        }
+
+        img {
+            max-width: 100%;
+            filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2));
+        }
+
+        .content {
+            padding: 2rem 3.25rem;
+            white-space: nowrap;
+            h5 {
+                position: relative;
+                line-height: 1.5625rem;
+                flex: 1 0 100%;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: 0em;
+                    left: -1.25em;
+                    width: 24px;
+                    height: 25px;
+                    margin-right: 0.8125rem;
+                    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z' fill='%23E9184E'/%3E%3Cpath d='M15 11.5002C15 12.2959 14.6839 13.059 14.1213 13.6216C13.5587 14.1842 12.7956 14.5002 12 14.5002C11.2044 14.5002 10.4413 14.1842 9.87868 13.6216C9.31607 13.059 9 12.2959 9 11.5002C9 10.7046 9.31607 9.94153 9.87868 9.37892C10.4413 8.81631 11.2044 8.50024 12 8.50024C12.7956 8.50024 13.5587 8.81631 14.1213 9.37892C14.6839 9.94153 15 10.7046 15 11.5002Z' fill='white'/%3E%3C/svg%3E");
+                }
+            }
+
+            p {
+                margin: 0;
+                color: $tertiary;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $tertiary;
+                &:hover {
+                    text-decoration: underline;
+                    color: $primary;
+                    transition: $transitionSpeed;
+                }
+            }
+
+            .adress {
+                margin-right: 2.25rem;
+            }
+
+            .route {
+                flex: 1 0 100%;
+                font-family: "UitzendbureauEventBody";
+                font-size: 0.875rem;
+                font-weight: 500;
+                text-decoration: underline;
+                color: $primary;
+                &:hover {
+                    color: $secondary;
+                    transition: $transitionSpeed;
+                }
+            }
+        }
+
+        .arrow {
+            display: flex;
+            justify-content: end;
+            position: absolute;
+            z-index: -1;
+
+            svg {
+                max-height: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .container {
+            overflow: visible;
+
+            .event-even {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+        .content {
+            max-width: 80%;
+        }
+    }
+}

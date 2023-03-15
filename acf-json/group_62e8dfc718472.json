@@ -1,0 +1,54 @@
+{
+    "key": "group_62e8dfc718472",
+    "title": "Button header",
+    "fields": [
+        {
+            "key": "field_62e8dfdceec41",
+            "label": "Call to action groot scherm",
+            "name": "cta_bigscreen",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62ebc46ae3e43",
+            "label": "Call to action mobiel scherm",
+            "name": "cta_mobile",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "website-informatie"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1659618450
+}

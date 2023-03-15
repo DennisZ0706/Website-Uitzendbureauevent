@@ -1,0 +1,21 @@
+footer {
+    #socket {
+        background-color: $primary;
+        color: white;
+        font-size: 0.875rem;
+        padding: 1rem 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    svg {
+        max-height: 1rem;
+        margin-left: 1rem;
+    }
+}

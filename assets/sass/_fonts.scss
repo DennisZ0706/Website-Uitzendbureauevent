@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "UitzendbureauEvent";
+    src: url("../fonts/F37Gruffy-Light.eot");
+    src: url("../fonts/F37Gruffy-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/F37Gruffy-Light.woff2") format("woff2"), url("../fonts/F37Gruffy-Light.woff") format("woff"),
+        url("../fonts/F37Gruffy-Light.ttf") format("truetype"),
+        url("../fonts/F37Gruffy-Light.svg#F37Gruffy-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEvent";
+    src: url("../fonts/F37Gruffy-Bold.eot");
+    src: url("../fonts/F37Gruffy-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/F37Gruffy-Bold.woff2") format("woff2"), url("../fonts/F37Gruffy-Bold.woff") format("woff"),
+        url("../fonts/F37Gruffy-Bold.ttf") format("truetype"),
+        url("../fonts/F37Gruffy-Bold.svg#F37Gruffy-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEvent";
+    src: url("../fonts/F37Gruffy-Regular.eot");
+    src: url("../fonts/F37Gruffy-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/F37Gruffy-Regular.woff2") format("woff2"), url("../fonts/F37Gruffy-Regular.woff") format("woff"),
+        url("../fonts/F37Gruffy-Regular.ttf") format("truetype"),
+        url("../fonts/F37Gruffy-Regular.svg#F37Gruffy-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-BoldItalic.woff2") format("woff2"),
+        url("../fonts/Formular-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-Black.woff2") format("woff2"), url("../fonts/Formular-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-BlackItalic.woff2") format("woff2"),
+        url("../fonts/Formular-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-LightItalic.woff2") format("woff2"),
+        url("../fonts/Formular-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-Bold.woff2") format("woff2"), url("../fonts/Formular-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-Medium.woff2") format("woff2"), url("../fonts/Formular-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-Italic.woff2") format("woff2"), url("../fonts/Formular-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-MediumItalic.woff2") format("woff2"),
+        url("../fonts/Formular-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular-Light.woff2") format("woff2"), url("../fonts/Formular-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UitzendbureauEventBody";
+    src: url("../fonts/Formular.woff2") format("woff2"), url("../fonts/Formular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "UitzendbureauEventBody";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+h1 {
+    font-family: "Uitzendbureauevent";
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: bold;
+    line-height: 3.5rem;
+}
+
+h2 {
+    font-family: "Uitzendbureauevent";
+    font-size: calc(1.325rem + 0.9vw);
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+h3 {
+    font-family: "Uitzendbureauevent";
+    font-size: calc(1.3rem + 0.6vw);
+    font-weight: bold;
+    line-height: auto;
+}
+
+h4 {
+    font-family: "Uitzendbureauevent";
+    font-size: calc(1.275rem + 0.3vw);
+    font-weight: bold;
+    line-height: auto;
+}
+
+h5 {
+    font-family: "Uitzendbureauevent";
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: auto;
+}
+
+h6 {
+    font-family: "Uitzendbureauevent";
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: auto;
+}
+
+p {
+    font-family: "UitzendbureauEventBody";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+a {
+    font-family: "UitzendbureauEventBody";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.375rem;
+    }
+}
+
+// Colors
+
+#theme {
+    @mixin headings {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @content;
+        }
+    }
+    @include headings {
+        color: $secondary;
+        b,
+        strong {
+            color: $primary;
+        }
+    }
+}
+
+#faq,
+#location,
+#agenda {
+    @mixin headings {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @content;
+        }
+    }
+    @include headings {
+        color: $primary;
+        b,
+        strong {
+            color: $secondary;
+        }
+    }
+}
+
+#hero,
+#tickets {
+    @mixin headings {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @content;
+        }
+    }
+    @include headings {
+        color: white;
+        b,
+        strong {
+            color: $secondary;
+        }
+    }
+}

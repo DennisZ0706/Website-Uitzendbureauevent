@@ -1,0 +1,153 @@
+header {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .notify {
+        padding: 0.75rem 0rem;
+        background-color: $secondary;
+        line-height: 1.25rem;
+        color: white;
+
+        .close-notify {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: auto;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 18L18 6M6 6L18 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            transform: translateX(-50%);
+            &:hover {
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 18L18 6M6 6L18 18' stroke='%230A68BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+                cursor: pointer;
+            }
+        }
+    }
+
+    nav {
+        .row {
+            padding: 2rem 0;
+            transition: all 0.2s;
+
+            .branding {
+                width: auto;
+                height: 52px;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+
+                .logo-dark {
+                    display: block;
+                }
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                background-color: white;
+
+                span {
+                    font-weight: 500;
+                    padding-right: 0.5rem;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+
+                    .option {
+                        &:hover {
+                            background-color: $light;
+                        }
+                    }
+                }
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .main-nav {
+                transition: all 0.2s;
+
+                ul {
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        padding: 0 1.5rem;
+
+                        a {
+                            font-weight: 500;
+                            color: white;
+                            text-decoration: none;
+                        }
+                        &:hover {
+                            > a {
+                                color: $secondary !important;
+                                text-decoration: underline;
+                                text-underline-offset: 3px;
+                                transition: $transitionSpeed;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.scrolled-nav {
+            background: white;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -moz-backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+            .row {
+                padding: 1rem 0;
+
+                .branding {
+                    width: auto;
+                    height: 52px;
+                    overflow: hidden;
+                    position: relative;
+                    cursor: pointer;
+
+                    .logo-light {
+                        display: none;
+                    }
+                }
+                .main-nav {
+                    li {
+                        a {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 992px) {
+        nav {
+            background-color: white;
+
+            .row {
+                padding: 1rem 0;
+
+                .branding {
+                    .logo-dark {
+                        display: block;
+                    }
+                    .logo-light {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

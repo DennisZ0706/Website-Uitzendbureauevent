@@ -1,0 +1,14 @@
+/* Theme Name: Uitzendbureau Event
+Text Domain: uitzendbureauevent
+Version: 0.0
+Tested up to: 8.1
+Requires at least: 5.0
+Requires PHP: 7.x
+Description: Theme developed by Flexsoftware
+Author: Flexsoftware
+Author URI: https://flexsoftware.nl/
+*/
+
+@import url('assets/css/includes.css');
+
+@import url('assets/css/main.css');

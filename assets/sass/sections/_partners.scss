@@ -1,0 +1,27 @@
+#partners {
+    .container {
+        padding-bottom: 3.5rem;
+
+        span {
+            color: $primary;
+        }
+
+        .swiper-wrapper {
+            margin-top: 3rem;
+            align-items: center;
+
+            .logo-partner {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width: 992px) {
+        padding-bottom: 0rem;
+    }
+}

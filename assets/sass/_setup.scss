@@ -1,0 +1,23 @@
+html {
+    --top-spacing: 150px;
+    scroll-padding-top: var(--top-spacing);
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "UitzendbureauEventBody";
+    background: white;
+}
+
+@media screen and (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1360px;
+    }
+}

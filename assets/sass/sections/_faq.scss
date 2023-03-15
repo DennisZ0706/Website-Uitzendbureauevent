@@ -1,0 +1,59 @@
+#faq {
+  padding-bottom: 7.5rem;
+
+  .email {
+    span {
+      font-weight: 500;
+      color: $secondary;
+    }
+
+    a {
+      color: $primary;
+      &:hover {
+        color: $secondary;
+        transition: $transitionSpeed;
+      }
+    }
+  }
+
+  .faq-item {
+    display: block;
+    padding: 0.625rem 0rem;
+    border-bottom: 1px solid $light;
+
+    .heading {
+      span {
+        color: $primary;
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+          color: $secondary;
+        }
+      }
+      svg {
+        transition: all 0.3s ease;
+        margin-top: 14px;
+      }
+    }
+
+    .content {
+      display: none;
+      padding-top: 0.3125rem;
+      padding-right: 1rem;
+      color: $tertiary;
+    }
+
+    &.open {
+      .heading {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  @media screen and(max-width: 992px) {
+    padding-bottom: 4rem;
+  }
+}
